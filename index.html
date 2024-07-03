@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkhaus Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <label>Anzahl der Parkplätze:</label>
+            <input type="number" id="anzahlParkplätze">
+            <label>Anzahl der Etagen:</label>
+            <input type="number" id="anzahlEtagen">
+
+            <label>Anzahl der verfügbaren Parkplätze:</label>
+            <label id="verfuegbareParkplaetze">0</label><br><br>
+
+            <label>Fahrzeug ID:</label>
+            <input size="7" type="text" id="fahrzeugID">
+
+            <button id="addFahrzeug">Fahrzeug einfahren</button>
+            <button id="findFahrzeug">Fahrzeug finden</button>
+            <button id="loescheFahrzeug">Fahrzeug ausfahren</button>
+
+            <label>Etage:</label>
+            <select id="etagenNummer">
+                <option id="option">1</option>
+            </select>
+
+            <label>Parkplatznummer:</label>
+            <select id="parkplatzNummer"></select>
+
+            <label>Fahrzeug Typ:</label>
+            <select id="fahrzeugTyp">
+                <option value="auto">Auto</option>
+                <option value="motorrad">Motorrad</option>
+            </select>
+        </div>
+        <div class="header-rechts">
+            <label class="symbol">
+                <img src="/symbol/P.png" width="50" height="50">
+            </label>
+            <h1>arkhaus Vence</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="parkingRow"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
